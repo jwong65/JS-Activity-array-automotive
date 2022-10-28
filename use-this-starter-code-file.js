@@ -91,6 +91,8 @@ class Vehicle {
 
 //Code the Car subclass here
 
+//The parameters for Vehicle are make, model, year, color and mileage
+
 
 
 
