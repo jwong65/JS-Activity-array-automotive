@@ -98,12 +98,14 @@ console.log(v.make)
 
 class Car extends Vehicle{
 	constructor(make, model, year, color, mileage){
-		
+		super(make, model, year, color, mileage)
 	}
 }
 
 
 //create new instances of the Car class here
+let u = new Car("Mercury", "Sedan", "1800", "color", "mileage");
+console.log(u.year)
 
 
 
