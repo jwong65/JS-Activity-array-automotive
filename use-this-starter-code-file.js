@@ -91,14 +91,14 @@ class Vehicle {
 
 //Code the Car subclass here
 
-//The Arugments for Vehicle are make, model, year, color and mileage
-
-
-
-
+//The arguments for Vehicle are make, model, year, color and mileage
 
 let v = new Vehicle("Mercury", "Sedan", "1965", "color", "mileage");
 console.log(v.make)
+
+class Car extends Vehicle{
+	
+}
 
 
 //create new instances of the Car class here
