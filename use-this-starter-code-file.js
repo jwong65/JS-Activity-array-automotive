@@ -99,6 +99,8 @@ console.log(v.make)
 class Car extends Vehicle{
 	constructor(make, model, year, color, mileage){
 		super(make, model, year, color, mileage)
+		//car needs maximumPassengers, passenger, numberOfWheels, maximumSpeed, fuel and schedule Service
+
 		this.maximumPassenger =5;
 		this.passenger =0;
 		this.numberOfWheels =4;
@@ -106,8 +108,12 @@ class Car extends Vehicle{
 		this.fuel=10;
 		this.scheduleService=false;
 	}
+
+	//methods
+	loadpassenger()
+	start()
+	scheduleService()
 }
-//car needs maximumPassengers, passenger, numberOfWheels, maximumSpeed, fuel and schedule Service
 
 //create new instances of the Car class here
 let u = new Car("Mercury", "Sedan", "1800", "color", "mileage");
