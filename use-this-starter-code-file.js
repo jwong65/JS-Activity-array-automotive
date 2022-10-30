@@ -147,6 +147,11 @@ u.scheduleServices()
 //Bonus
 
 //Code the Truck subclass here
-class Truck extends Vehicle(){
-
+class Truck extends Vehicle{
+	constructor(make, model, year, color, mileage){
+		super(make, model, year, color, mileage)
+	}
 }
+
+let tru = new Truck("Truck", "Truck", "1996", "White", 15000)
+console.log(tru.year)
