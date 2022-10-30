@@ -116,6 +116,7 @@ class Car extends Vehicle{
 		}
 		else{
 			console.log("You cannot load", number, "passengers. There is a maximum of", this.maximumPassenger, "passengers. There are currently", this.passenger, "in the vehicle")
+			//This is the error message for the 
 		}
 	}
 	start(){
@@ -139,8 +140,8 @@ class Car extends Vehicle{
 let u = new Car("Mercury", "Sedan", "1800", "color", "mileage");
 // console.log(u.year)
 // u.loadpassenger(7)
-u.start()
-u.scheduleServices()
+// u.start()
+// u.scheduleServices()
 
 
 
