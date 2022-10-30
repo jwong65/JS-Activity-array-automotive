@@ -125,7 +125,9 @@ class Car extends Vehicle{
 		}
 
 	}
-	// scheduleService()
+	scheduleService(mileage){
+
+	}
 }
 
 //create new instances of the Car class here
