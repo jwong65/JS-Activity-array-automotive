@@ -126,6 +126,8 @@ class Car extends Vehicle{
 
 	}
 	scheduleServices(){
+		//scheduleService is a property so this is scheduleService(s)
+		//made this.mileage a number for comparison
 		if (Number(this.mileage)>30000){
 			this.scheduleService = true;
 			console.log("Time for maintenance")
@@ -145,3 +147,6 @@ u.scheduleServices()
 //Bonus
 
 //Code the Truck subclass here
+class Truck extends Vehicle(){
+
+}
