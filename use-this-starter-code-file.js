@@ -136,7 +136,7 @@ class Car extends Vehicle{
 }
 
 //create new instances of the Car class here
-let u = new Car("Mercury", "Sedan", "1800", "color", 355555);
+let u = new Car("Mercury", "Sedan", "1800", "color", "mileage");
 // console.log(u.year)
 // u.loadpassenger(7)
 u.start()
