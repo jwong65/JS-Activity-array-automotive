@@ -125,8 +125,11 @@ class Car extends Vehicle{
 		}
 
 	}
-	scheduleService(mileage){
-
+	scheduleService(){
+		if (Number(this.mileage)>30000){
+			this.scheduleService = true;
+			console.log("Time for maintenance")
+		}
 	}
 }
 
@@ -135,9 +138,7 @@ let u = new Car("Mercury", "Sedan", "1800", "color", "mileage");
 // console.log(u.year)
 // u.loadpassenger(7)
 u.start()
-
-
-
+u.scheduleService()
 
 
 
