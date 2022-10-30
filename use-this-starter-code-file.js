@@ -118,7 +118,12 @@ class Car extends Vehicle{
 			console.log("You cannot load", number, "passengers. There is a maximum of", this.maximumPassenger, "passengers. There are currently", this.passenger, "in the vehicle")
 		}
 	}
-	// start()
+	start(){
+		if (fuel>0){
+			this.started=true;
+		}
+
+	}
 	// scheduleService()
 }
 
