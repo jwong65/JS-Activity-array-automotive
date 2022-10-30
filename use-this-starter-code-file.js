@@ -111,12 +111,12 @@ class Car extends Vehicle{
 
 	//methods
 	loadpassenger(number){
-		if ((this.passenger + number)<this.maximumPassenger){
+		if ((this.passenger + number)<=this.maximumPassenger){
 			this.passenger+=number
 		}
 		else{
 			console.log("You cannot load", number, "passengers. There is a maximum of", this.maximumPassenger, "passengers. There are currently", this.passenger, "in the vehicle")
-			//This is the error message for the 
+			//This is the error message for the loading passengers, it has to match less than or equal to the maximum passenger
 		}
 	}
 	start(){
