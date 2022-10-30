@@ -119,8 +119,9 @@ class Car extends Vehicle{
 		}
 	}
 	start(){
-		if (fuel>0){
+		if (this.fuel>0){
 			this.started=true;
+		// 	console.log(this.started)
 		}
 
 	}
@@ -129,9 +130,9 @@ class Car extends Vehicle{
 
 //create new instances of the Car class here
 let u = new Car("Mercury", "Sedan", "1800", "color", "mileage");
-console.log(u.year)
-u.loadpassenger(7)
-
+// console.log(u.year)
+// u.loadpassenger(7)
+u.start()
 
 
 
