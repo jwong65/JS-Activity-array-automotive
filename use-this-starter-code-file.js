@@ -113,6 +113,7 @@ class Car extends Vehicle{
 	loadpassenger(number){
 		if ((this.passenger + number)<=this.maximumPassenger){
 			this.passenger+=number
+			console.log("There are now", this.passenger, "in the vehicle.")
 		}
 		else{
 			console.log("You cannot load", number, "passengers. There is a maximum of", this.maximumPassenger, "passengers. There are currently", this.passenger, "in the vehicle")
@@ -139,7 +140,8 @@ class Car extends Vehicle{
 //create new instances of the Car class here
 let u = new Car("Mercury", "Sedan", "1800", "color", "mileage");
 // console.log(u.year)
-// u.loadpassenger(7)
+u.loadpassenger(4)
+u.loadpassenger(5)
 // u.start()
 // u.scheduleServices()
 
