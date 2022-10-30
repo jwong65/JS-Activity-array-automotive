@@ -125,7 +125,7 @@ class Car extends Vehicle{
 		}
 
 	}
-	scheduleService(){
+	scheduleServices(){
 		if (Number(this.mileage)>30000){
 			this.scheduleService = true;
 			console.log("Time for maintenance")
@@ -134,11 +134,11 @@ class Car extends Vehicle{
 }
 
 //create new instances of the Car class here
-let u = new Car("Mercury", "Sedan", "1800", "color", "mileage");
+let u = new Car("Mercury", "Sedan", "1800", "color", 355555);
 // console.log(u.year)
 // u.loadpassenger(7)
 u.start()
-u.scheduleService()
+u.scheduleServices()
 
 
 
